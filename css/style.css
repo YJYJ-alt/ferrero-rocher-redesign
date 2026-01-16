@@ -52,7 +52,7 @@ button {
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   z-index: 1000;
-  background-color: #3b2114;
+  background-color: #4d2d1e;
 }
 
 .header .inner {
@@ -68,7 +68,7 @@ button {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: 0 50px;
   color: #fff;
 }
 
