@@ -1,182 +1,663 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3조 Ferrero rocher</title>
+    <title>3조 Ferrero Rocher Korea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
   </head>
 
   <body>
-    <!-- 로고 -->
-    <div class="wrap">
-      <header class="header">
+    <!-- Header -->
+    <header>
+      <div class="header-container">
         <div class="logo">
-          <a href="index.html">
-            <h1>Ferrero Rocher</h1>
-          </a>
+          <!-- 로고 이미지 삽입 -->
+          <img src="images/logo_white.png" alt="FERRERO ROCHER" />
         </div>
-
-        <!-- 네비게이션 -->
-        <nav class="nav">
+        <nav>
           <ul>
-            <li>
-              <a href="#">컬렉션</a>
-              <ul class="submenu">
-                <li><a href="#">어쩌고</a></li>
-                <li><a href="#">저쩌고</a></li>
-                <li><a href="#">이러쿵</a></li>
-                <li><a href="#">저러쿵</a></li>
-              </ul>
+            <li class="nav-item">
+              <a href="#collection">컬렉션</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li>페레로로쉐</li>
+                  <li>페레로 컬렉션</li>
+                  <li>시즌 에디션</li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#">브랜드 스토리</a>
-              <ul class="submenu">
-                <li><a href="#">어쩌고</a></li>
-                <li><a href="#">저쩌고</a></li>
-                <li><a href="#">이러쿵</a></li>
-                <li><a href="#">저러쿵</a></li>
-              </ul>
+            <li class="nav-item">
+              <a href="#brand-story">브랜드 스토리</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li>브랜드 소개</li>
+                  <li>품질 철학</li>
+                  <li>골드 모먼트</li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#">지속가능성</a>
-              <ul class="submenu">
-                <li><a href="#">어쩌고</a></li>
-                <li><a href="#">저쩌고</a></li>
-                <li><a href="#">이러쿵</a></li>
-                <li><a href="#">저러쿵</a></li>
-              </ul>
+            <li class="nav-item">
+              <a href="#sustainability">지속가능성</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li>원료에 대한 약속</li>
+                  <li>환경을 위한 포장</li>
+                  <li>책임 있는 경영</li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#">이벤트 뉴스</a>
-              <ul class="submenu">
-                <li><a href="#">어쩌고</a></li>
-                <li><a href="#">저쩌고</a></li>
-                <li><a href="#">이러쿵</a></li>
-                <li><a href="#">저러쿵</a></li>
-              </ul>
+            <li class="nav-item">
+              <a href="#events">이벤트&뉴스</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li>진행 중인 이벤트</li>
+                  <li>새로운 소식</li>
+                  <li>공지 및 채용</li>
+                </ul>
+              </div>
             </li>
           </ul>
         </nav>
-        <button class="language-btn" alt="언어변경">
-          <span>KR|EN</span>
-        </button>
-      </header>
-    </div>
+        <div class="lang-selector">
+          <span class="lang-btn active" onclick="changeLang('kr')">KR</span>
+          <span class="lang-separator">|</span>
+          <span class="lang-btn" onclick="changeLang('en')">EN</span>
+        </div>
+      </div>
+    </header>
 
+    <!-- !MAIN! (수진님) -->
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- 히어로 동영상 삽입 -->
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="video/페레로 메인.mp4" type="video/mp4" />
+        <!-- <source src="videos/hero-video.webm" type="video/webm"> -->
+      </video>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section" id="collection">
+      <div class="container">
+        <h2>PRODUCT</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <!-- 제품 이미지 1 삽입 -->
+              <img
+                src="images/초콜릿바 1.png"
+                alt="초콜릿 바"
+                class="product-image"
+              />
+            </div>
+            <h3 class="product-name">초콜릿 바</h3>
+            <button class="detail-button">자세히 보기 →</button>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <!-- 제품 이미지 2 삽입 -->
+              <img
+                src="images/페레로로쉐 1.png"
+                alt="페레로 로쉐 스페셜티"
+                class="product-image"
+              />
+            </div>
+            <h3 class="product-name">페레로 로쉐 스페셜티</h3>
+            <button class="detail-button">자세히 보기 →</button>
+          </div>
+          <div class="product-card">
+            <div class="product-image-wrapper">
+              <!-- 제품 이미지 3 삽입 -->
+              <img
+                src="images/스페셜에디션 1.png"
+                alt="스페셜 에디션"
+                class="product-image"
+              />
+            </div>
+            <h3 class="product-name">스페셜 에디션</h3>
+            <button class="detail-button">자세히 보기 →</button>
+          </div>
+        </div>
+        <div class="view-more-wrapper">
+          <button class="view-more-btn">VIEW<br />MORE</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Be Better Section -->
+    <section class="be-better" id="sustainability">
+      <div class="container">
+        <h2>BE BETTER</h2>
+        <p>사람과 지역, 미래를 함께 생각합니다.</p>
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-icon">
+              <!-- 아이콘 이미지 1: 지속 가능한 원료 -->
+              <img src="images/icon-vector1.png" alt="지속 가능한 원료" />
+              <!-- 또는 PNG: <img src="images/icon-sustainability.png" alt="지속 가능한 원료"> -->
+            </div>
+            <p class="value-text">지속 가능한 원료 선택</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <!-- 아이콘 이미지 2: 파트너십 -->
+              <img src="images/icon-vector2.png" alt="파트너십" />
+              <!-- 또는 PNG: <img src="images/icon-partnership.png" alt="파트너십"> -->
+            </div>
+            <p class="value-text">사람과 지역사회를 잇는 파트너십</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <!-- 아이콘 이미지 3: 환경 책임 -->
+              <img src="images/icon-vector3.png" alt="환경 책임" />
+              <!-- 또는 PNG: <img src="images/icon-environment.png" alt="환경 책임"> -->
+            </div>
+            <p class="value-text">환경을 고려한 책임 있는 노력</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Season Product Section -->
+    <section class="season-product">
+      <div class="container">
+        <h2>SEASON PRODUCT</h2>
+        <div class="season-grid">
+          <!-- 시즌 제품 1 -->
+          <div class="season-card">
+            <div class="season-image-wrapper type1">
+              <!-- 시즌 제품 이미지 1 삽입 -->
+              <img
+                src="images/image-Photoroom (1) 1.png"
+                alt="발렌타인데이 스페셜"
+                class="season-image"
+              />
+            </div>
+            <h3 class="season-title">발렌타인데이 스페셜</h3>
+            <div class="season-divider type1"></div>
+            <p class="season-desc">마음을 전하기에 가장 완벽한 선택</p>
+          </div>
+          <!-- 시즌 제품 2 -->
+          <div class="season-card">
+            <div class="season-image-wrapper type2">
+              <!-- 시즌 제품 이미지 2 삽입 -->
+              <img
+                src="images/image 58.png"
+                alt="크리스마스 스페셜"
+                class="season-image"
+              />
+            </div>
+            <h3 class="season-title">크리스마스 스페셜</h3>
+            <div class="season-divider type2"></div>
+            <p class="season-desc">크리스마스를 위한 클래식한 선택</p>
+          </div>
+          <!-- 시즌 제품 3 -->
+          <div class="season-card">
+            <div class="season-image-wrapper type1">
+              <!-- 시즌 제품 이미지 3 삽입 -->
+              <img
+                src="images/image 59.png"
+                alt="크리스마스 스페셜"
+                class="season-image"
+              />
+            </div>
+            <h3 class="season-title">크리스마스 스페셜</h3>
+            <div class="season-divider type1"></div>
+            <p class="season-desc">특별함을 담은 시즌 한정 기프트</p>
+          </div>
+          <!-- 시즌 제품 4 -->
+          <div class="season-card">
+            <div class="season-image-wrapper type2">
+              <!-- 시즌 제품 이미지 4 삽입 -->
+              <img
+                src="images/image 62.png"
+                alt="응원 스페셜"
+                class="season-image"
+              />
+            </div>
+            <h3 class="season-title">응원 스페셜</h3>
+            <div class="season-divider type2"></div>
+            <p class="season-desc">응원의 마음을 전하는 달콤한 선물</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Brands Section -->
+    <section class="brands">
+      <div class="container">
+        <h2>OUR BRANDS</h2>
+        <p class="brands-subtitle">
+          전 세계에서 사랑받는 페레로의 브랜드를 만나보세요.
+        </p>
+        <div class="brands-grid">
+          <!-- 브랜드 1: FERRERO ROCHER -->
+          <div class="brand-card">
+            <img src="images/로고.png" alt="FERRERO ROCHER" />
+            <!-- 또는 텍스트로
+                    <div class="brand-logo ferrero">FERRERO<br>ROCHER</div>
+                    -->
+          </div>
+          <!-- 브랜드 2: nutella -->
+          <div class="brand-card">
+            <img src="images/Nutella_logo_PNG1 1.png" alt="nutella" />
+            <!-- 또는 텍스트로
+                    <div class="brand-logo nutella">nutella</div>
+                    -->
+          </div>
+          <!-- 브랜드 3: Kinder -->
+          <div class="brand-card">
+            <img src="images/image 103.png" alt="Kinder" />
+            <!-- 또는 텍스트로
+                    <div class="brand-logo kinder">Kinder</div>
+                    -->
+          </div>
+          <!-- 브랜드 4: Raffaello -->
+          <div class="brand-card">
+            <img src="images/image 104.png" alt="Raffaello" />
+            <!-- 또는 텍스트로
+                    <div class="brand-logo raffaello">Raffaello</div>
+                    -->
+          </div>
+          <!-- 브랜드 5: tic tac -->
+          <div class="brand-card">
+            <img src="images/image 105.png" alt="tic tac" />
+            <!-- 또는 텍스트로
+                    <div class="brand-logo tictac">tic tac</div>
+                    -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVEPAGE1 (다람님) -->
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="assests/images/메인배경.png" alt="메인배경" />
+      <!-- 히어로 배경 이미지: CSS의 .hero에서 background: url('히어로이미지경로.jpg'); 로 변경 -->
+      <div class="hero-content">
+        <h1>Brand Story</h1>
+        <p>최고급 초콜릿의 전통과 혁신</p>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">우리의 이야기</h2>
+        <div class="history-grid">
+          <div class="history-image">
+            <!-- 히스토리 이미지 1 삽입 -->
+            <!-- <img src="history-image-1.jpg" alt="역사 이미지"> -->
+          </div>
+          <div class="history-text">
+            <h3>전통의 시작</h3>
+            <p>
+              1946년 이탈리아 알바에서 시작된 페레로 로쉐의 이야기는 한 가족의
+              열정과 헌신으로부터 시작되었습니다.
+            </p>
+            <p>
+              최고급 재료만을 사용하여 만든 프리미엄 초콜릿은 전 세계인의 사랑을
+              받는 브랜드로 성장했습니다.
+            </p>
+            <p>
+              오늘날까지도 변함없는 품질과 장인정신으로 특별한 순간을
+              함께합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section style="background: #fafafa">
+      <div class="container">
+        <h2 class="section-title">대표 제품</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <!-- 제품 이미지 1 삽입 -->
+              <!-- <img src="product-1.jpg" alt="페레로 로쉐"> -->
+            </div>
+            <div class="product-info">
+              <h4>페레로 로쉐</h4>
+              <p>골든 포장의 프리미엄 초콜릿</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <!-- 제품 이미지 2 삽입 -->
+              <!-- <img src="product-2.jpg" alt="로쉐 컬렉션"> -->
+            </div>
+            <div class="product-info">
+              <h4>로쉐 컬렉션</h4>
+              <p>다양한 맛의 초콜릿 컬렉션</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <!-- 제품 이미지 3 삽입 -->
+              <!-- <img src="product-3.jpg" alt="기프트 세트"> -->
+            </div>
+            <div class="product-info">
+              <h4>기프트 세트</h4>
+              <p>특별한 날을 위한 선물 세트</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section">
+      <div class="container">
+        <h2 class="section-title">페레로 브랜드 패밀리</h2>
+        <div class="brands-grid">
+          <div class="brand-logo">
+            <!-- 브랜드 로고 1 삽입 -->
+            <!-- <img src="nutella-logo.png" alt="Nutella"> -->
+            <span>Nutella</span>
+          </div>
+          <div class="brand-logo">
+            <!-- 브랜드 로고 2 삽입 -->
+            <!-- <img src="ferrero-logo.png" alt="Ferrero Rocher"> -->
+            <span>Ferrero Rocher</span>
+          </div>
+          <div class="brand-logo">
+            <!-- 브랜드 로고 3 삽입 -->
+            <!-- <img src="kinder-logo.png" alt="Kinder"> -->
+            <span>Kinder</span>
+          </div>
+          <div class="brand-logo">
+            <!-- 브랜드 로고 4 삽입 -->
+            <!-- <img src="tictac-logo.png" alt="Tic Tac"> -->
+            <span>Tic Tac</span>
+          </div>
+          <div class="brand-logo">
+            <!-- 브랜드 로고 5 삽입 -->
+            <!-- <img src="raffaello-logo.png" alt="Raffaello"> -->
+            <span>Raffaello</span>
+          </div>
+          <div class="brand-logo">
+            <!-- 브랜드 로고 6 삽입 -->
+            <!-- <img src="moncheri-logo.png" alt="Mon Chéri"> -->
+            <span>Mon Chéri</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">브랜드 스토리 갤러리</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <!-- 갤러리 이미지 1 삽입 -->
+            <!-- <img src="gallery-1.jpg" alt="갤러리 1"> -->
+          </div>
+          <div class="gallery-item">
+            <!-- 갤러리 이미지 2 삽입 -->
+            <!-- <img src="gallery-2.jpg" alt="갤러리 2"> -->
+          </div>
+          <div class="gallery-item">
+            <!-- 갤러리 이미지 3 삽입 -->
+            <!-- <img src="gallery-3.jpg" alt="갤러리 3"> -->
+          </div>
+          <div class="gallery-item">
+            <!-- 갤러리 이미지 4 삽입 -->
+            <!-- <img src="gallery-4.jpg" alt="갤러리 4"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder-section">
+      <div class="container">
+        <div class="founder-content">
+          <div class="founder-image">
+            <!-- 창립자 이미지 삽입 -->
+            <!-- <img src="founder.jpg" alt="창립자"> -->
+          </div>
+          <div class="founder-text">
+            <h3>창립자의 비전</h3>
+            <p>
+              피에트로 페레로는 1946년 이탈리아 피에몬테에서 작은 제과점을
+              시작했습니다. 그의 비전은 단순했지만 강력했습니다: 최고의 재료로
+              최고의 제품을 만드는 것.
+            </p>
+            <p>
+              오늘날 페레로 그룹은 전 세계 170개국 이상에서 사랑받는 글로벌
+              기업으로 성장했습니다. 하지만 우리의 핵심 가치는 변하지
+              않았습니다.
+            </p>
+            <p>
+              품질에 대한 헌신, 혁신을 향한 열정, 그리고 가족 기업으로서의
+              정체성을 지켜나가고 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- !SERVEPAGE2! (연주님) -->
+    <!-- hero section -->
     <main>
-      <!-- 히어로 섹션 -->
-      <section id="hero" class="hero-section">
-        <video
-          loop
-          src="video/페레로 메인.mp4"
-          autoplay
-          muted
-          alt="메인화면"
-        ></video>
-        <div class="main">
-          <div class="title">
-            <p>(문구 적고싶은 거 있을 때 적기)</p>
-          </div>
-          <div class="sub-title">
-            <p>(서브 타이틀)</p>
-          </div>
-          <a href="#" class="chocolate-btn">
-            <span>알아보기</span>
-          </a>
+      <section id="sub2" class="sub-hero">
+        <!-- 메인 이미지 -->
+        <div class="hero-bg">
+          <img src="images/파티사진.png" alt="파티사진" />
+        </div>
+
+        <!-- 메인 텍스트 -->
+        <div class="hero-text">
+          <h2 class="hero-title">
+            Fine Your Golen Moment
+            <span class="sparkle"></span>
+          </h2>
+          <p class="hero-desc">소중한 사람들과 나누는 특별한 순간</p>
         </div>
       </section>
 
-      <section id="product" class="product-section">
+      <!-- Boutique -->
+      <section id="Boutique" class="Boutique-section">
         <div class="inner">
-          <div class="product-title">
-            <div class="title">
-              <h2>product</h2>
-              <div class="sub-title">(프로덕트 서브)</div>
+          <div class="section-header">
+            <div class="section-title-box">
+              <h2>The Golden Boutique</h2>
+              <p>페레로 로쉐 부티크에서 특별한 순간을 더욱 빛나게</p>
+            </div>
+          </div>
+
+          <div class="bradn-card-box">
+            <!-- 킨더 -->
+            <div class="brand-card">
+              <div class="card-content">
+                <h3 class="card-title">Kinder</h3>
+                <p class="card-subtitle">Moments of Joy for Every Child</p>
+                <p class="card-desc">
+                  즐거운 초콜릿 경험을 위한<br />
+                  페레로 그룹의 대표 키즈 브랜드
+                </p>
+              </div>
+              <div class="card-image">
+                <img src="images/킨더.png" alt="킨더 초콜릿" />
+              </div>
+            </div>
+          </div>
+
+          <!-- 페레로 로쉐 -->
+          <div class="brand-card">
+            <div class="card-content">
+              <h3 class="card-title">Ferrero Rocher</h3>
+              <p class="card-subtitle">The Golden Standard of Gifting</p>
+              <p class="card-desc">
+                골드 패키지와 헤이즐넛 초콜릿으로<br />
+                특별한 순간을 완성하는 시그니처 브랜드
+              </p>
+            </div>
+            <div class="card-image">
+              <img src="images/로쉐.png" alt="페레로 로쉐" />
+            </div>
+          </div>
+
+          <!-- 누텔라 -->
+          <div class="brand-card">
+            <div class="card-content">
+              <h3 class="card-title">nutella</h3>
+              <p class="card-subtitle">A sweet Ritual, Every Day</p>
+              <p class="card-desc">
+                아침과 일상 속 작은 행복을 만드는<br />
+                세계적인 헤이즐넛 스프레드 브랜드
+              </p>
+            </div>
+            <div class="card-image">
+              <img src="images/누텔라.png" alt="누텔라" />
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- 아이템 -->
-        <section id="item" class="item-section">
-          <div class="card">
-            <div class="section-title">
-              <picture>
-                <img src="images/페레로2.jpg" alt="초콜릿 바" />
-              </picture>
-              <div class="card-info">
-                <div class="card-name">
-                  <h2>초콜릿 바</h2>
-                </div>
-                <a href="#" class="more">
-                  <span>자세히 보기</span>
-                </a>
-              </div>
-            </div>
+      <!-- serve img -->
+      <div class="Monets Golden">
+        <h2 class="Moments-title">Make Your Monets Golden</h2>
+        <p class="Moments-subtitle">당신의 순간을 황금처럼 빛나게</p>
+        <figure>
+          <img src="images/moments.png" alt="순간의 황금" />
+        </figure>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <!-- 푸터 로고 이미지 삽입 -->
+            <img src="images/logo_white.png" alt="FERRERO ROCHER" />
           </div>
-
-          <div class="card">
-            <div class="section-title">
-              <picture>
-                <img src="images/페레로1.jpg" alt="페레로로쉐" />
-              </picture>
-            </div>
-            <div class="card-info">
-              <div class="card-name">
-                <h2>페레로 로쉐 스페셜티</h2>
-              </div>
-              <a href="#" class="more">
-                <span>자세히 보기</span>
+          <div class="footer-social">
+            <p class="social-label">소셜 미디어</p>
+            <div class="social-icons">
+              <!-- Instagram -->
+              <a href="#" class="social-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="2"
+                    y="2"
+                    width="20"
+                    height="20"
+                    rx="5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <circle cx="18" cy="6" r="1" fill="currentColor" />
+                </svg>
+              </a>
+              <!-- YouTube -->
+              <a href="#" class="social-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.54 6.42C22.4212 5.94541 22.1793 5.51057 21.8386 5.15941C21.498 4.80824 21.0708 4.55318 20.6 4.42C18.88 4 12 4 12 4C12 4 5.12 4 3.4 4.46C2.92925 4.59318 2.50198 4.84824 2.16135 5.19941C1.82072 5.55057 1.57879 5.98541 1.46 6.46C1.14521 8.20556 0.991258 9.97631 1 11.75C0.988779 13.537 1.14273 15.3213 1.46 17.08C1.59095 17.5398 1.83856 17.9581 2.17844 18.2945C2.51832 18.6308 2.93865 18.8738 3.4 19C5.12 19.46 12 19.46 12 19.46C12 19.46 18.88 19.46 20.6 19C21.0708 18.8668 21.498 18.6118 21.8386 18.2606C22.1793 17.9094 22.4212 17.4746 22.54 17C22.8524 15.2676 23.0063 13.5103 23 11.75C23.0112 9.96295 22.8573 8.17864 22.54 6.42Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.75 15.02L15.5 11.75L9.75 8.48V15.02Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <a href="#" class="social-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </a>
             </div>
           </div>
+        </div>
 
-          <div class="card">
-            <div class="section-title">
-              <picture>
-                <img src="images/페레로3.jpg" alt="스페셜 에디션" />
-              </picture>
-            </div>
-            <div class="card-info">
-              <div class="card-name">
-                <h2>스페셜 에디션</h2>
-              </div>
-            </div>
-            <a href="#" class="more">
-              <span>자세히 보기</span>
-            </a>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>제품</h3>
+            <ul>
+              <li><a href="#">페레로 로쉐</a></li>
+            </ul>
           </div>
-        </section>
-      </section>
-
-      <section id="better" class="be-better">
-        <div class="inner">
-          <div class="section-title">
-            <div class="title">
-              <h2>BE BETTER</h2>
-            </div>
-            <div class="sub-title">
-              <p>사람과 지역, 미래를 함께 생각합니다.</p>
-            </div>
+          <div class="footer-column">
+            <h3>문의</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
           </div>
-          <div class="content">
-            <div class="card">
-              <div class="picture">
-                <picture>
-                  <img src="images/icon-vector1.png" alt="선택" />
-                </picture>
-              </div>
-            </div>
+          <div class="footer-column">
+            <h3>정보</h3>
+            <ul>
+              <li><a href="#">개인정보 처리방침</a></li>
+              <li><a href="#">쿠키 정책</a></li>
+              <li><a href="#">개인정보 보호정책</a></li>
+              <li><a href="#">기술적 요건</a></li>
+            </ul>
           </div>
         </div>
-      </section>
 
-      <section id="season"></section>
+        <div class="footer-bottom">
+          <p>&copy; Ferrero 2021. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
-      <section id="brands"></section>
-    </main>
-
-    <footer class="footer"></footer>
+    <script>
+      function changeLang(lang) {
+        document.querySelectorAll(".lang-btn").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        event.target.classList.add("active");
+        console.log("언어 변경:", lang);
+      }
+    </script>
   </body>
 </html>
