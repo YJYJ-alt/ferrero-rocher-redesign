@@ -1,0 +1,66 @@
+/* ================================================
+   CSS Variables (Design Tokens)
+   ================================================ */
+:root {
+  /* Colors */
+  --color-bg-light-beige: #f6eed7;
+  --color-bg-beige: #f6eedc;
+  --color-bg-cream: #fff8ee;
+  --color-bg-dark-brown: #3b2114;
+  --color-bg-footer-brown: #4d2d1e;
+  --color-bg-coffee: #3b2114;
+  --color-bg-wine: #180405;
+  --color-accent-gold: #efd333;
+  --color-text-primary: #000000;
+  --color-text-light: #f6eed7;
+  --color-text-white: #ffffff;
+  --color-text-subtitle-gray: rgba(0, 0, 0, 0.53);
+
+  /* Typography */
+  --font-primary:
+    "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-korean: "Noto Sans KR", sans-serif;
+  --font-decorative: "Pinyon Script", cursive;
+  --font-nav: "Noto Sans", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+
+  /* Font Sizes */
+  --font-size-nav: 22px;
+  --font-size-hero: 42px;
+  --font-size-section-title: 40px;
+  --font-size-section-title-small: 32px;
+  --font-size-card-title: 30px;
+  --font-size-card-subtitle: 16px;
+  --font-size-card-description: 30px;
+  --font-size-moments-title: 32px;
+  --font-size-moments-subtitle: 18px;
+  --font-size-pairing-with: 48px;
+  --font-size-pairing-main: 64px;
+  --font-size-pairing-desc: 24px;
+  --font-size-occasion-title: 30px;
+  --font-size-package-size: 40px;
+  --font-size-package-desc: 24px;
+  --font-size-package-sub: 16px;
+  --font-size-footer-title: 20px;
+  --font-size-footer-heading: 26px;
+  --font-size-footer-link: 20px;
+  --font-size-copyright: 14px;
+
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 60px;
+  --spacing-3xl: 80px;
+
+  /* Border Radius */
+  --radius-card: 11px;
+  --radius-button: 20px;
+  --radius-circle: 50%;
+
+  /* Container */
+  --container-max-width: 1920px;
+  --container-padding: 74px;
+}
